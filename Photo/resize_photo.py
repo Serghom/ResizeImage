@@ -34,7 +34,7 @@ else:
     new_width = int(input("Ширина (px): "))
     new_height = int(input("Высота (px): "))
 
-    for name_img in files:
+    for name_img in files: 
         img = Image.open(directory + "/" + name_img)
         img = img.resize((new_width, new_height), Image.ANTIALIAS)
         img.save(output + "/new_" + name_img)
